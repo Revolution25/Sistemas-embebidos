@@ -1,0 +1,409 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"1603 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\PIC16F887.h
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
+"3388
+[v _ANSEL `Vuc ~T0 @X0 0 e@392 ]
+"3450
+[v _ANSELH `Vuc ~T0 @X0 0 e@393 ]
+[v F161 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:\Program Files\Microchip\xc8\v2.40\pic\include\builtins.h
+[v __delay `JF161 ~T0 @X0 0 e ]
+[p i __delay ]
+"1547 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\PIC16F887.h
+[s S61 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S61 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"1546
+[u S60 `S61 1 ]
+[n S60 . . ]
+"1558
+[v _TRISCbits `VS60 ~T0 @X0 0 e@135 ]
+"2563
+[s S103 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S103 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"2573
+[s S104 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S104 . TXD8 . nTX8 ]
+"2578
+[s S105 :6 `uc 1 :1 `uc 1 ]
+[n S105 . . TX8_9 ]
+"2562
+[u S102 `S103 1 `S104 1 `S105 1 ]
+[n S102 . . . . ]
+"2583
+[v _TXSTAbits `VS102 ~T0 @X0 0 e@152 ]
+"1045
+[s S41 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S41 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"1055
+[s S42 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S42 . RCD8 . RC9 ]
+"1060
+[s S43 :6 `uc 1 :1 `uc 1 ]
+[n S43 . . nRC8 ]
+"1064
+[s S44 :6 `uc 1 :1 `uc 1 ]
+[n S44 . . RC8_9 ]
+"1044
+[u S40 `S41 1 `S42 1 `S43 1 `S44 1 ]
+[n S40 . . . . . ]
+"1069
+[v _RCSTAbits `VS40 ~T0 @X0 0 e@24 ]
+"3342
+[s S135 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S135 . ABDEN WUE . BRG16 SCKP . RCIDL ABDOVF ]
+"3341
+[u S134 `S135 1 ]
+[n S134 . . ]
+"3353
+[v _BAUDCTLbits `VS134 ~T0 @X0 0 e@391 ]
+"2643
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"353
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"1141
+[v _RCREG `Vuc ~T0 @X0 0 e@26 ]
+"2 Recepcion.c
+[p x FOSC  =  XT       ]
+"3
+[p x WDTE  =  OFF        ]
+"4
+[p x PWRTE  =  OFF       ]
+"5
+[p x MCLRE  =  ON        ]
+"6
+[p x CP  =  OFF          ]
+"7
+[p x CPD  =  OFF         ]
+"8
+[p x BOREN  =  OFF        ]
+"9
+[p x IESO  =  OFF         ]
+"10
+[p x FCMEN  =  ON        ]
+"11
+[p x LVP  =  OFF          ]
+"55 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\PIC16F887.h
+[; <" INDF equ 00h ;# ">
+"62
+[; <" TMR0 equ 01h ;# ">
+"69
+[; <" PCL equ 02h ;# ">
+"76
+[; <" STATUS equ 03h ;# ">
+"162
+[; <" FSR equ 04h ;# ">
+"169
+[; <" PORTA equ 05h ;# ">
+"231
+[; <" PORTB equ 06h ;# ">
+"293
+[; <" PORTC equ 07h ;# ">
+"355
+[; <" PORTD equ 08h ;# ">
+"417
+[; <" PORTE equ 09h ;# ">
+"455
+[; <" PCLATH equ 0Ah ;# ">
+"462
+[; <" INTCON equ 0Bh ;# ">
+"540
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; <" PIR2 equ 0Dh ;# ">
+"653
+[; <" TMR1 equ 0Eh ;# ">
+"660
+[; <" TMR1L equ 0Eh ;# ">
+"667
+[; <" TMR1H equ 0Fh ;# ">
+"674
+[; <" T1CON equ 010h ;# ">
+"768
+[; <" TMR2 equ 011h ;# ">
+"775
+[; <" T2CON equ 012h ;# ">
+"846
+[; <" SSPBUF equ 013h ;# ">
+"853
+[; <" SSPCON equ 014h ;# ">
+"923
+[; <" CCPR1 equ 015h ;# ">
+"930
+[; <" CCPR1L equ 015h ;# ">
+"937
+[; <" CCPR1H equ 016h ;# ">
+"944
+[; <" CCP1CON equ 017h ;# ">
+"1041
+[; <" RCSTA equ 018h ;# ">
+"1136
+[; <" TXREG equ 019h ;# ">
+"1143
+[; <" RCREG equ 01Ah ;# ">
+"1150
+[; <" CCPR2 equ 01Bh ;# ">
+"1157
+[; <" CCPR2L equ 01Bh ;# ">
+"1164
+[; <" CCPR2H equ 01Ch ;# ">
+"1171
+[; <" CCP2CON equ 01Dh ;# ">
+"1241
+[; <" ADRESH equ 01Eh ;# ">
+"1248
+[; <" ADCON0 equ 01Fh ;# ">
+"1349
+[; <" OPTION_REG equ 081h ;# ">
+"1419
+[; <" TRISA equ 085h ;# ">
+"1481
+[; <" TRISB equ 086h ;# ">
+"1543
+[; <" TRISC equ 087h ;# ">
+"1605
+[; <" TRISD equ 088h ;# ">
+"1667
+[; <" TRISE equ 089h ;# ">
+"1705
+[; <" PIE1 equ 08Ch ;# ">
+"1761
+[; <" PIE2 equ 08Dh ;# ">
+"1818
+[; <" PCON equ 08Eh ;# ">
+"1865
+[; <" OSCCON equ 08Fh ;# ">
+"1930
+[; <" OSCTUNE equ 090h ;# ">
+"1982
+[; <" SSPCON2 equ 091h ;# ">
+"2044
+[; <" PR2 equ 092h ;# ">
+"2051
+[; <" SSPADD equ 093h ;# ">
+"2058
+[; <" SSPMSK equ 093h ;# ">
+"2063
+[; <" MSK equ 093h ;# ">
+"2180
+[; <" SSPSTAT equ 094h ;# ">
+"2349
+[; <" WPUB equ 095h ;# ">
+"2419
+[; <" IOCB equ 096h ;# ">
+"2489
+[; <" VRCON equ 097h ;# ">
+"2559
+[; <" TXSTA equ 098h ;# ">
+"2645
+[; <" SPBRG equ 099h ;# ">
+"2707
+[; <" SPBRGH equ 09Ah ;# ">
+"2777
+[; <" PWM1CON equ 09Bh ;# ">
+"2847
+[; <" ECCPAS equ 09Ch ;# ">
+"2929
+[; <" PSTRCON equ 09Dh ;# ">
+"2973
+[; <" ADRESL equ 09Eh ;# ">
+"2980
+[; <" ADCON1 equ 09Fh ;# ">
+"3014
+[; <" WDTCON equ 0105h ;# ">
+"3067
+[; <" CM1CON0 equ 0107h ;# ">
+"3132
+[; <" CM2CON0 equ 0108h ;# ">
+"3197
+[; <" CM2CON1 equ 0109h ;# ">
+"3248
+[; <" EEDATA equ 010Ch ;# ">
+"3253
+[; <" EEDAT equ 010Ch ;# ">
+"3260
+[; <" EEADR equ 010Dh ;# ">
+"3267
+[; <" EEDATH equ 010Eh ;# ">
+"3274
+[; <" EEADRH equ 010Fh ;# ">
+"3281
+[; <" SRCON equ 0185h ;# ">
+"3338
+[; <" BAUDCTL equ 0187h ;# ">
+"3390
+[; <" ANSEL equ 0188h ;# ">
+"3452
+[; <" ANSELH equ 0189h ;# ">
+"3502
+[; <" EECON1 equ 018Ch ;# ">
+"3547
+[; <" EECON2 equ 018Dh ;# ">
+[v $root$_main `(v ~T0 @X0 0 e ]
+"18 Recepcion.c
+[; ;Recepcion.c: 18: int main() {
+[v _main `(i ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"19
+[; ;Recepcion.c: 19:     TRISD=0;
+[e = _TRISD -> -> 0 `i `uc ]
+"20
+[; ;Recepcion.c: 20:     ANSEL=0;
+[e = _ANSEL -> -> 0 `i `uc ]
+"21
+[; ;Recepcion.c: 21:     ANSELH=0;
+[e = _ANSELH -> -> 0 `i `uc ]
+"22
+[; ;Recepcion.c: 22:     _delay((unsigned long)((32)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 32 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"24
+[; ;Recepcion.c: 24:     TRISCbits.TRISC7 = 1;
+[e = . . _TRISCbits 0 7 -> -> 1 `i `uc ]
+"25
+[; ;Recepcion.c: 25:     TXSTAbits.SYNC = 0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"26
+[; ;Recepcion.c: 26:     RCSTAbits.RX9 = 0;
+[e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
+"27
+[; ;Recepcion.c: 27:     TXSTAbits.BRGH = 0;
+[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
+"28
+[; ;Recepcion.c: 28:     BAUDCTLbits.BRG16=0;
+[e = . . _BAUDCTLbits 0 3 -> -> 0 `i `uc ]
+"29
+[; ;Recepcion.c: 29:     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"30
+[; ;Recepcion.c: 30:     RCSTAbits.SPEN = 1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+"31
+[; ;Recepcion.c: 31:     RCSTAbits.CREN = 1;
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"33
+[; ;Recepcion.c: 33:     while(1){
+[e :U 144 ]
+{
+"34
+[; ;Recepcion.c: 34:     switch (RCREG){
+[e $U 147  ]
+{
+"35
+[; ;Recepcion.c: 35:         case 0:
+[e :U 148 ]
+"36
+[; ;Recepcion.c: 36:             PORTD=63;
+[e = _PORTD -> -> 63 `i `uc ]
+"38
+[; ;Recepcion.c: 38:         break;
+[e $U 146  ]
+"39
+[; ;Recepcion.c: 39:         case 10:
+[e :U 149 ]
+"40
+[; ;Recepcion.c: 40:             PORTD=6;
+[e = _PORTD -> -> 6 `i `uc ]
+"41
+[; ;Recepcion.c: 41:         break;
+[e $U 146  ]
+"42
+[; ;Recepcion.c: 42:         case 20:
+[e :U 150 ]
+"43
+[; ;Recepcion.c: 43:             PORTD=91;
+[e = _PORTD -> -> 91 `i `uc ]
+"44
+[; ;Recepcion.c: 44:         break;
+[e $U 146  ]
+"45
+[; ;Recepcion.c: 45:         case 30:
+[e :U 151 ]
+"46
+[; ;Recepcion.c: 46:             PORTD=79;
+[e = _PORTD -> -> 79 `i `uc ]
+"47
+[; ;Recepcion.c: 47:         break;
+[e $U 146  ]
+"48
+[; ;Recepcion.c: 48:         case 40:
+[e :U 152 ]
+"49
+[; ;Recepcion.c: 49:             PORTD=102;
+[e = _PORTD -> -> 102 `i `uc ]
+"50
+[; ;Recepcion.c: 50:         break;
+[e $U 146  ]
+"51
+[; ;Recepcion.c: 51:         case 50:
+[e :U 153 ]
+"52
+[; ;Recepcion.c: 52:             PORTD=109;
+[e = _PORTD -> -> 109 `i `uc ]
+"53
+[; ;Recepcion.c: 53:         break;
+[e $U 146  ]
+"54
+[; ;Recepcion.c: 54:         case 60:
+[e :U 154 ]
+"55
+[; ;Recepcion.c: 55:             PORTD=125;
+[e = _PORTD -> -> 125 `i `uc ]
+"56
+[; ;Recepcion.c: 56:         break;
+[e $U 146  ]
+"57
+[; ;Recepcion.c: 57:         case 70:
+[e :U 155 ]
+"58
+[; ;Recepcion.c: 58:             PORTD=7;
+[e = _PORTD -> -> 7 `i `uc ]
+"59
+[; ;Recepcion.c: 59:         break;
+[e $U 146  ]
+"60
+[; ;Recepcion.c: 60:         case 80:
+[e :U 156 ]
+"61
+[; ;Recepcion.c: 61:             PORTD=127;
+[e = _PORTD -> -> 127 `i `uc ]
+"62
+[; ;Recepcion.c: 62:         break;
+[e $U 146  ]
+"63
+[; ;Recepcion.c: 63:         case 90:
+[e :U 157 ]
+"64
+[; ;Recepcion.c: 64:             PORTD=111;
+[e = _PORTD -> -> 111 `i `uc ]
+"65
+[; ;Recepcion.c: 65:         break;
+[e $U 146  ]
+"67
+[; ;Recepcion.c: 67:     }
+}
+[e $U 146  ]
+[e :U 147 ]
+[e [\ -> _RCREG `i , $ -> 0 `i 148
+ , $ -> 10 `i 149
+ , $ -> 20 `i 150
+ , $ -> 30 `i 151
+ , $ -> 40 `i 152
+ , $ -> 50 `i 153
+ , $ -> 60 `i 154
+ , $ -> 70 `i 155
+ , $ -> 80 `i 156
+ , $ -> 90 `i 157
+ 146 ]
+[e :U 146 ]
+"68
+[; ;Recepcion.c: 68:     }
+}
+[e :U 143 ]
+[e $U 144  ]
+[e :U 145 ]
+"69
+[; ;Recepcion.c: 69:     }
+[e :UE 142 ]
+}
