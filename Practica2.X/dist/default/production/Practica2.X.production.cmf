@@ -11,13 +11,13 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
-end_init CODE 0 0 0 3 2 1
-config CONFIG 4 2007 2007 1 2 1
 $dist/default/production\Practica2.X.production.o
 cinit CODE 0 7FC 7FC 4 2 1
-maintext CODE 0 777 777 85 2 1
+maintext CODE 0 770 770 8C 2 1
 cstackCOMMON COMMON 1 70 70 2 1 1
+config CONFIG 4 2007 2007 1 2 1
+$C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
+end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 1 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -33,12 +33,12 @@ BANK0 20-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 3-776 2
+CONST 3-76F 2
 CONST 800-1FFF 2
-ENTRY 3-776 2
+ENTRY 3-76F 2
 ENTRY 800-1FFF 2
 IDLOC 2000-2003 2
-CODE 3-776 2
+CODE 3-76F 2
 CODE 800-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -47,9 +47,9 @@ SFR3 180-18F 1
 COMMON 72-7D 1
 CONFIG 2008-2008 2
 EEDATA 2100-21FF 2
-STRCODE 3-776 2
+STRCODE 3-76F 2
 STRCODE 800-1FFF 2
-STRING 3-776 2
+STRING 3-76F 2
 STRING 800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -65,67 +65,70 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Practica2.X.production.o
-7FC cinit CODE >446:C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.s
-7FC cinit CODE >449:C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.s
-7FC cinit CODE >455:C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.s
-7FC cinit CODE >457:C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.s
-7FD cinit CODE >458:C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.s
-777 maintext CODE >19:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-777 maintext CODE >20:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-77B maintext CODE >21:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-77C maintext CODE >22:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-77F maintext CODE >23:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-780 maintext CODE >24:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-789 maintext CODE >25:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-78C maintext CODE >27:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-78F maintext CODE >28:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-790 maintext CODE >29:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-791 maintext CODE >30:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-792 maintext CODE >31:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-795 maintext CODE >32:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-799 maintext CODE >33:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-79C maintext CODE >34:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7A0 maintext CODE >38:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7A1 maintext CODE >39:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7A3 maintext CODE >40:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7A4 maintext CODE >41:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7A6 maintext CODE >42:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7A8 maintext CODE >43:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7A9 maintext CODE >44:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7AB maintext CODE >45:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7AD maintext CODE >46:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7AE maintext CODE >47:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7B0 maintext CODE >48:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7B2 maintext CODE >49:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7B3 maintext CODE >50:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7B5 maintext CODE >51:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7B7 maintext CODE >52:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7B8 maintext CODE >53:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7BA maintext CODE >54:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7BC maintext CODE >55:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7BD maintext CODE >56:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7BF maintext CODE >57:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7C1 maintext CODE >58:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7C2 maintext CODE >59:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7C4 maintext CODE >60:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7C6 maintext CODE >61:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7C7 maintext CODE >62:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7C9 maintext CODE >63:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7CB maintext CODE >64:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7CC maintext CODE >65:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7CE maintext CODE >66:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7D0 maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7D6 maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7DB maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7DE maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7E1 maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7E4 maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7E7 maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7EA maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7ED maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7F0 maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7F3 maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
-7F6 maintext CODE >68:C:\Users\Ing. Marcos Paz\Desktop\Respaldo\Rufino\Embebidos 1\Practica 2\Practica2.X\practica2.c
+7FC cinit CODE >446:C:\Users\hecto\AppData\Local\Temp\xcAs8a0.s
+7FC cinit CODE >449:C:\Users\hecto\AppData\Local\Temp\xcAs8a0.s
+7FC cinit CODE >455:C:\Users\hecto\AppData\Local\Temp\xcAs8a0.s
+7FC cinit CODE >457:C:\Users\hecto\AppData\Local\Temp\xcAs8a0.s
+7FD cinit CODE >458:C:\Users\hecto\AppData\Local\Temp\xcAs8a0.s
+770 maintext CODE >20:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+770 maintext CODE >21:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+774 maintext CODE >22:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+775 maintext CODE >23:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+778 maintext CODE >24:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+779 maintext CODE >25:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+782 maintext CODE >26:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+785 maintext CODE >29:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+788 maintext CODE >30:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+789 maintext CODE >31:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+78A maintext CODE >32:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+78B maintext CODE >33:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+78E maintext CODE >34:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+792 maintext CODE >35:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+795 maintext CODE >36:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+798 maintext CODE >40:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+79C maintext CODE >40:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7A1 maintext CODE >43:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7A2 maintext CODE >44:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7A4 maintext CODE >45:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7A5 maintext CODE >46:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7A7 maintext CODE >47:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7A9 maintext CODE >48:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7AA maintext CODE >49:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7AC maintext CODE >50:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7AE maintext CODE >51:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7AF maintext CODE >52:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7B1 maintext CODE >53:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7B3 maintext CODE >54:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7B4 maintext CODE >55:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7B6 maintext CODE >56:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7B8 maintext CODE >57:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7B9 maintext CODE >58:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7BB maintext CODE >59:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7BD maintext CODE >60:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7BE maintext CODE >61:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7C0 maintext CODE >62:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7C2 maintext CODE >63:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7C3 maintext CODE >64:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7C5 maintext CODE >65:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7C7 maintext CODE >66:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7C8 maintext CODE >67:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7CA maintext CODE >68:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7CC maintext CODE >69:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7CD maintext CODE >70:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7CF maintext CODE >71:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7D1 maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7D6 maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7DB maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7DE maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7E1 maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7E4 maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7E7 maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7EA maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7ED maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7F0 maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7F3 maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7F6 maintext CODE >73:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
+7F9 maintext CODE >78:C:\Users\hecto\OneDrive\Documentos\GitHub\Sistemas-embebidos\Practica2.X\practica2.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -146,28 +149,28 @@ __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 400F 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
-_main EEE 0 CODE 0 maintext dist/default/production\Practica2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
+_main EE0 0 CODE 0 maintext dist/default/production\Practica2.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Practica2.X.production.o
-start 0 0 CODE 0 init C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
+start 0 0 CODE 0 init C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Practica2.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELH 189 0 ABS 0 - dist/default/production\Practica2.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
-___stacklo 0 0 ABS 0 - C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
+___stackhi 0 0 ABS 0 - C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
+___stacklo 0 0 ABS 0 - C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
 _BAUDCTLbits 187 0 ABS 0 - dist/default/production\Practica2.X.production.o
 start_initialization FF8 0 CODE 0 cinit dist/default/production\Practica2.X.production.o
 _TRISCbits 87 0 ABS 0 - dist/default/production\Practica2.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
+___int_sp 0 0 STACK 2 stack C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -204,9 +207,9 @@ __S0 800 0 ABS 0 - -
 __S1 72 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\ING~1.MAR\AppData\Local\Temp\xcAs4bg.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\hecto\AppData\Local\Temp\xcAs8a0.o
 _RCSTAbits 18 0 ABS 0 - dist/default/production\Practica2.X.production.o
-__pmaintext EEE 0 CODE 0 maintext dist/default/production\Practica2.X.production.o
+__pmaintext EE0 0 CODE 0 maintext dist/default/production\Practica2.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
 __Lspace_0 0 0 ABS 0 - -
@@ -266,7 +269,7 @@ __initialization FF8 0 CODE 0 cinit dist/default/production\Practica2.X.producti
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FC FF8 4 2
-maintext 0 777 EEE 85 2
+maintext 0 770 EE0 8C 2
 cstackCOMMON 1 70 70 2 1
 reset_vec 0 0 0 3 2
 # %NOTES Section

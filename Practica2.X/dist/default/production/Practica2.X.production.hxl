@@ -10,10 +10,10 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 5h		(dist/default/production\Practica2.X.production.hex)
-  EEEh - FFFh		(dist/default/production\Practica2.X.production.hex)
+  EE0h - FFFh		(dist/default/production\Practica2.X.production.hex)
   400Eh - 400Fh		(dist/default/production\Practica2.X.production.hex)
  Unused ranges:
-  6h - EEDh
+  6h - EDFh
   1000h - 400Dh
 
 ### Hex Memory Map ###
@@ -25,7 +25,7 @@
 ----------------------------------------------------------
 00000000 | H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
-00000EE0 | -- -- -- -- -- -- -- -- -- -- -- -- -- -- H1 H1
+00000EE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000EF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000F00 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000F10 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

@@ -16,6 +16,7 @@
 #include <PIC16F887.h>
 #define _XTAL_FREQ 4000000      // Frecuencia del cristal a utilizar.
 
+
 int main() {
     TRISB = 1;  // Configuro PORTB como entrada
     TRISD=0;    //Configuro PORTD como salida
@@ -23,6 +24,7 @@ int main() {
     ANSELH=0;   //Aseguro que PORTB sea entrada digital
     __delay_ms(32); //Retardo para poder ver el primer bit
     PORTB=0;
+    
     
     TRISCbits.TRISC6 = 0;
     TXSTAbits.SYNC = 0;
@@ -33,7 +35,10 @@ int main() {
     RCSTAbits.SPEN = 1;
     TXSTAbits.TXEN = 1;
     
-    while(1){
+   
+    
+    if (PORTB>=128){
+       while(1){
     switch (PORTB){
         case 0: TXREG =0;
             PORTD=63;
@@ -66,5 +71,8 @@ int main() {
             PORTD=111;
         break;
     }
+     }
     }
-    }
+     
+    
+}

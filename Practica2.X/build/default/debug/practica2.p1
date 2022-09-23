@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"1479 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\PIC16F887.h
+"1479 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\PIC16F887.h
 [v _TRISB `Vuc ~T0 @X0 0 e@134 ]
 "1603
 [v _TRISD `Vuc ~T0 @X0 0 e@136 ]
@@ -8,12 +8,63 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ANSEL `Vuc ~T0 @X0 0 e@392 ]
 "3450
 [v _ANSELH `Vuc ~T0 @X0 0 e@393 ]
-[v F36 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:\Program Files\Microchip\xc8\v2.40\pic\include\builtins.h
-[v __delay `JF36 ~T0 @X0 0 e ]
+[v F161 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:\Program Files\Microchip\xc8\v2.36\pic\include\builtins.h
+[v __delay `JF161 ~T0 @X0 0 e ]
 [p i __delay ]
-"229 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\PIC16F887.h
+"229 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\PIC16F887.h
 [v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"1547
+[s S61 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S61 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"1546
+[u S60 `S61 1 ]
+[n S60 . . ]
+"1558
+[v _TRISCbits `VS60 ~T0 @X0 0 e@135 ]
+"2563
+[s S103 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S103 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"2573
+[s S104 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S104 . TXD8 . nTX8 ]
+"2578
+[s S105 :6 `uc 1 :1 `uc 1 ]
+[n S105 . . TX8_9 ]
+"2562
+[u S102 `S103 1 `S104 1 `S105 1 ]
+[n S102 . . . . ]
+"2583
+[v _TXSTAbits `VS102 ~T0 @X0 0 e@152 ]
+"3342
+[s S135 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S135 . ABDEN WUE . BRG16 SCKP . RCIDL ABDOVF ]
+"3341
+[u S134 `S135 1 ]
+[n S134 . . ]
+"3353
+[v _BAUDCTLbits `VS134 ~T0 @X0 0 e@391 ]
+"2643
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"1045
+[s S41 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S41 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"1055
+[s S42 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S42 . RCD8 . RC9 ]
+"1060
+[s S43 :6 `uc 1 :1 `uc 1 ]
+[n S43 . . nRC8 ]
+"1064
+[s S44 :6 `uc 1 :1 `uc 1 ]
+[n S44 . . RC8_9 ]
+"1044
+[u S40 `S41 1 `S42 1 `S43 1 `S44 1 ]
+[n S40 . . . . . ]
+"1069
+[v _RCSTAbits `VS40 ~T0 @X0 0 e@24 ]
+"1134
+[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
 "353
 [v _PORTD `Vuc ~T0 @X0 0 e@8 ]
 "2 practica2.c
@@ -36,7 +87,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x FCMEN  =  ON        ]
 "11
 [p x LVP  =  OFF          ]
-"55 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\PIC16F887.h
+"55 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\PIC16F887.h
 [; <" INDF equ 00h ;# ">
 "62
 [; <" TMR0 equ 01h ;# ">
@@ -193,50 +244,194 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3547
 [; <" EECON2 equ 018Dh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"17 practica2.c
-[; ;practica2.c: 17: int main() {
+"20 practica2.c
+[; ;practica2.c: 20: int main() {
 [v _main `(i ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"18
-[; ;practica2.c: 18:     TRISB = 1;
-[e = _TRISB -> -> 1 `i `uc ]
-"19
-[; ;practica2.c: 19:     TRISD=0;
-[e = _TRISD -> -> 0 `i `uc ]
-"20
-[; ;practica2.c: 20:     ANSEL=0;
-[e = _ANSEL -> -> 0 `i `uc ]
 "21
-[; ;practica2.c: 21:     ANSELH=0;
-[e = _ANSELH -> -> 0 `i `uc ]
+[; ;practica2.c: 21:     TRISB = 1;
+[e = _TRISB -> -> 1 `i `uc ]
 "22
-[; ;practica2.c: 22:     _delay((unsigned long)((32)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 32 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;practica2.c: 22:     TRISD=0;
+[e = _TRISD -> -> 0 `i `uc ]
+"23
+[; ;practica2.c: 23:     ANSEL=0;
+[e = _ANSEL -> -> 0 `i `uc ]
 "24
-[; ;practica2.c: 24:     if (PORTB==1){
-[e $ ! == -> _PORTB `i -> 1 `i 139  ]
-{
+[; ;practica2.c: 24:     ANSELH=0;
+[e = _ANSELH -> -> 0 `i `uc ]
 "25
-[; ;practica2.c: 25:         PORTD=1;
-[e = _PORTD -> -> 1 `i `uc ]
+[; ;practica2.c: 25:     _delay((unsigned long)((32)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 32 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "26
-[; ;practica2.c: 26:     }
-}
-[e $U 140  ]
-"27
-[; ;practica2.c: 27:     else {
-[e :U 139 ]
-{
-"28
-[; ;practica2.c: 28:         PORTD=0;
-[e = _PORTD -> -> 0 `i `uc ]
+[; ;practica2.c: 26:     PORTB=0;
+[e = _PORTB -> -> 0 `i `uc ]
 "29
-[; ;practica2.c: 29:     }
-}
-[e :U 140 ]
+[; ;practica2.c: 29:     TRISCbits.TRISC6 = 0;
+[e = . . _TRISCbits 0 6 -> -> 0 `i `uc ]
 "30
-[; ;practica2.c: 30: }
-[e :UE 138 ]
+[; ;practica2.c: 30:     TXSTAbits.SYNC = 0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"31
+[; ;practica2.c: 31:     TXSTAbits.TX9 = 0;
+[e = . . _TXSTAbits 0 6 -> -> 0 `i `uc ]
+"32
+[; ;practica2.c: 32:     TXSTAbits.BRGH = 0;
+[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
+"33
+[; ;practica2.c: 33:     BAUDCTLbits.BRG16=0;
+[e = . . _BAUDCTLbits 0 3 -> -> 0 `i `uc ]
+"34
+[; ;practica2.c: 34:     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"35
+[; ;practica2.c: 35:     RCSTAbits.SPEN = 1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+"36
+[; ;practica2.c: 36:     TXSTAbits.TXEN = 1;
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+"40
+[; ;practica2.c: 40:     if (PORTB>=128){
+[e $ ! >= -> _PORTB `i -> 128 `i 143  ]
+{
+"41
+[; ;practica2.c: 41:        while(1){
+[e :U 145 ]
+{
+"42
+[; ;practica2.c: 42:     switch (PORTB){
+[e $U 148  ]
+{
+"43
+[; ;practica2.c: 43:         case 0: TXREG =0;
+[e :U 149 ]
+[e = _TXREG -> -> 0 `i `uc ]
+"44
+[; ;practica2.c: 44:             PORTD=63;
+[e = _PORTD -> -> 63 `i `uc ]
+"45
+[; ;practica2.c: 45:         break;
+[e $U 147  ]
+"46
+[; ;practica2.c: 46:         case 1: TXREG =10;
+[e :U 150 ]
+[e = _TXREG -> -> 10 `i `uc ]
+"47
+[; ;practica2.c: 47:             PORTD=6;
+[e = _PORTD -> -> 6 `i `uc ]
+"48
+[; ;practica2.c: 48:         break;
+[e $U 147  ]
+"49
+[; ;practica2.c: 49:         case 2: TXREG =20;
+[e :U 151 ]
+[e = _TXREG -> -> 20 `i `uc ]
+"50
+[; ;practica2.c: 50:             PORTD=91;
+[e = _PORTD -> -> 91 `i `uc ]
+"51
+[; ;practica2.c: 51:         break;
+[e $U 147  ]
+"52
+[; ;practica2.c: 52:         case 3: TXREG =30;
+[e :U 152 ]
+[e = _TXREG -> -> 30 `i `uc ]
+"53
+[; ;practica2.c: 53:             PORTD=79;
+[e = _PORTD -> -> 79 `i `uc ]
+"54
+[; ;practica2.c: 54:         break;
+[e $U 147  ]
+"55
+[; ;practica2.c: 55:         case 4: TXREG =40;
+[e :U 153 ]
+[e = _TXREG -> -> 40 `i `uc ]
+"56
+[; ;practica2.c: 56:             PORTD=102;
+[e = _PORTD -> -> 102 `i `uc ]
+"57
+[; ;practica2.c: 57:         break;
+[e $U 147  ]
+"58
+[; ;practica2.c: 58:         case 5: TXREG =50;
+[e :U 154 ]
+[e = _TXREG -> -> 50 `i `uc ]
+"59
+[; ;practica2.c: 59:             PORTD=109;
+[e = _PORTD -> -> 109 `i `uc ]
+"60
+[; ;practica2.c: 60:         break;
+[e $U 147  ]
+"61
+[; ;practica2.c: 61:         case 6: TXREG =60;
+[e :U 155 ]
+[e = _TXREG -> -> 60 `i `uc ]
+"62
+[; ;practica2.c: 62:             PORTD=125;
+[e = _PORTD -> -> 125 `i `uc ]
+"63
+[; ;practica2.c: 63:         break;
+[e $U 147  ]
+"64
+[; ;practica2.c: 64:         case 7: TXREG =70;
+[e :U 156 ]
+[e = _TXREG -> -> 70 `i `uc ]
+"65
+[; ;practica2.c: 65:             PORTD=7;
+[e = _PORTD -> -> 7 `i `uc ]
+"66
+[; ;practica2.c: 66:         break;
+[e $U 147  ]
+"67
+[; ;practica2.c: 67:         case 8: TXREG =80;
+[e :U 157 ]
+[e = _TXREG -> -> 80 `i `uc ]
+"68
+[; ;practica2.c: 68:             PORTD=127;
+[e = _PORTD -> -> 127 `i `uc ]
+"69
+[; ;practica2.c: 69:         break;
+[e $U 147  ]
+"70
+[; ;practica2.c: 70:         case 9: TXREG =90;
+[e :U 158 ]
+[e = _TXREG -> -> 90 `i `uc ]
+"71
+[; ;practica2.c: 71:             PORTD=111;
+[e = _PORTD -> -> 111 `i `uc ]
+"72
+[; ;practica2.c: 72:         break;
+[e $U 147  ]
+"73
+[; ;practica2.c: 73:     }
+}
+[e $U 147  ]
+[e :U 148 ]
+[e [\ -> _PORTB `i , $ -> 0 `i 149
+ , $ -> 1 `i 150
+ , $ -> 2 `i 151
+ , $ -> 3 `i 152
+ , $ -> 4 `i 153
+ , $ -> 5 `i 154
+ , $ -> 6 `i 155
+ , $ -> 7 `i 156
+ , $ -> 8 `i 157
+ , $ -> 9 `i 158
+ 147 ]
+[e :U 147 ]
+"74
+[; ;practica2.c: 74:      }
+}
+[e :U 144 ]
+[e $U 145  ]
+[e :U 146 ]
+"75
+[; ;practica2.c: 75:     }
+}
+[e :U 143 ]
+"78
+[; ;practica2.c: 78: }
+[e :UE 142 ]
 }
